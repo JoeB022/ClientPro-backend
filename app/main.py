@@ -3,7 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker, Session
 from sqlalchemy.exc import IntegrityError
-from models import Client, Project, Base  # Import models from models.py
+from .models import Client, Project, Base  # Import models from models.py
 from pydantic import BaseModel
 
 # Database Configuration
